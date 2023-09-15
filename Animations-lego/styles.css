@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,100;1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;100;300&display=swap');
 
   :root {
   --yellow: #ffd602;
@@ -29,6 +29,42 @@ body {
   height: 100%;
   width: 100%;
 }
+.navbar{
+  background: lightblue;
+  grid-area: nav;
+}
+.navbar__content {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0 0 0 80px;
+
+  animation: 2s navbar 0.5s ease-in-out;
+}
+
+@keyframes navbar {
+  0%{
+    transform: translateY(-200px);
+  }
+  100%{
+    transform: translateY(0);
+  }
+}
+.navbar__content img{
+  width: 50px;
+}
+.navbar__content ul{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  width: 450px;
+}
+.navbar__content ul li a{
+  color: var(--red);
+  text-decoration: none;
+  font-weight: 100;
+}
 .loader {
   background: pink;
   width: 100%;
@@ -39,7 +75,7 @@ body {
   position: absolute;
   z-index: 3;
 
-  animation: loader 2s linear forwards;
+  animation: loader 0.5s linear forwards;
 }
 @keyframes loader {
   0% {

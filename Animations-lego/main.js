@@ -1,6 +1,6 @@
 const modal = document.querySelector(".modal");
 const legoImages = document.querySelectorAll(".superImage");
-const btnClose = document.querySelector(".modal__content--close");
+const btnClose = document.querySelector(".modal-container__close");
 // ".hidden"
 
 console.log(legoImages);
